@@ -2,7 +2,6 @@ body {
     background-color: #e5e8e8;
     color: #4e545c;
     margin: 0;
-    font-family: 'Quicksand';
 }
 
 body.dark-mode {
@@ -10,13 +9,84 @@ body.dark-mode {
     color: #e5e8e8;
 }
 
-main .container {
+nav .navbar {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+nav .navbar h1,
+nav .navbar button {
+    margin: 20px;
+}
+
+main .container {
+    width: 1200px;
+    display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+}
+
+main .container .form {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main .container .form label {
+    font-size: 20px;
+    color: #4e545c;
+}
+
+main .container .form label.dark-mode {
+    color: #e5e8e8;
+    background-color: #000401;
+}
+
+main .container .form input {
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 5px;
+    background-color: #4e545c;
+}
+
+main .container .form .dark-mode {
+    background-color: #e5e8e8;
+    color: #4e545c;
+}
+
+main .container .form .inputEmail {
+    margin-bottom: 20px;
+}
+
+main .container .form .buttonForm {
+    margin-top: 15px;
+    border-radius: 20px;
+    height: 40px;
+    width: 120px;
+    background-color: #4e545c;
+    color: #e5e8e8;
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+
+main .container .form .buttonForm:hover {
+    background-color: #000401;
+}
+
+main .container .form .buttonForm.dark-mode {
+    background-color: #e5e8e8;
+    color: #4e545c;
+}
+
+main .container .form .buttonForm.dark-mode:hover {
+    background-color: #4e545c;
+    color: #e5e8e8;
 }
 
 footer {
@@ -44,6 +114,7 @@ button {
     background-color: #4e545c;
     color: #e5e8e8;
     transition: all 0.5s linear;
+    cursor: pointer;
 }
 
 button:hover {
