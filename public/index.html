@@ -12,16 +12,26 @@
 
 <body>
     <nav>
-
+        <div class="navbar">
+            <h1 id="page-title">Light Mode ON</h1>
+            <button aria-label="selecionar-modo" id="mode-selector">Dark Mode</button>
+        </div>
     </nav>
     <main>
         <div class="container">
-            <h1 id="page-title">Light Modee ON</h1>
-            <button aria-label="selecionar-modo" id="mode-selector">Dark Mode</button>
+            <div class="form">
+                <label class="label" id="mode-selector">Digite seu e-mail:</label>
+                <input class="input inputEmail" type="email" name="email" id="email" placeholder="email@email.com">
+
+                <label class="label">Digite sua senha:</label>
+                <input class="input" type="password" name="senha" id="senha" placeholder="*******">
+
+                <button class="buttonForm" aria-label="selecionar-modo" id="logar">Logar</button>
+            </div>
         </div>
     </main>
 
-    <footer>Basecamp Javascript @ Digital Innovation One</footer>
+    <footer>João Eugênio &copy; Digital Innovation One BootCamp - 2022</footer>
     <script src="../assets/js/script.js"></script>
 </body>
 
